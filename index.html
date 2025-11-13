@@ -207,27 +207,14 @@
             font-size: 0.9em;
         }
         
-        .impact-factor {
-            display: inline-block;
-            background: #e3f2fd;
-            color: #1565c0;
-            padding: 2px 8px;
-            border-radius: 3px;
-            font-size: 0.85em;
+        .publication a {
+            color: #2a5298;
+            text-decoration: none;
             font-weight: 500;
-            margin-top: 5px;
         }
         
-        .citation-count {
-            display: inline-block;
-            background: #f3e5f5;
-            color: #6a1b9a;
-            padding: 2px 8px;
-            border-radius: 3px;
-            font-size: 0.85em;
-            font-weight: 500;
-            margin-left: 5px;
-            margin-top: 5px;
+        .publication a:hover {
+            text-decoration: underline;
         }
         
         .conference {
@@ -300,17 +287,30 @@
             box-shadow: 0 4px 10px rgba(42, 82, 152, 0.3);
         }
         
-        .recognition {
-            background: #fff3e0;
-            border-left: 4px solid #ff9800;
-            padding: 20px;
-            border-radius: 4px;
-            margin: 20px 0;
+        .publication-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 25px 0;
         }
         
-        .recognition h3 {
-            color: #e65100;
-            margin-bottom: 10px;
+        .publication-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .publication-links a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(102, 126, 234, 0.4);
         }
         
         footer {
@@ -512,12 +512,17 @@
         <!-- Publications Section -->
         <section id="publications">
             <h2>Publications</h2>
-            <p style="margin-bottom: 25px;">
-                <strong>Full publication list available on</strong> <a href="https://scholar.google.co.in/citations?user=mHZ3W1oAAAAJ&hl=en&authuser=1" target="_blank" style="color: #2a5298; text-decoration: none; font-weight: 600;">Google Scholar</a> | 
-                <a href="https://orcid.org/0000-0003-4361-9746" target="_blank" style="color: #2a5298; text-decoration: none; font-weight: 600;">ORCID</a>
+            
+            <p style="margin-bottom: 15px; font-size: 1.05em; line-height: 1.8;">
+                My research has been published in peer-reviewed journals with emphasis on atmospheric aerosol characterization, radiative forcing, and air quality. For the most current and comprehensive publication list with citation metrics, please visit my profiles below:
             </p>
             
-            <h3 style="color: #1e3c72; margin-top: 30px; margin-bottom: 15px; font-size: 1.2em;">During PhD (2021-Present)</h3>
+            <div class="publication-links">
+                <a href="https://scholar.google.co.in/citations?user=mHZ3W1oAAAAJ&hl=en&authuser=1" target="_blank">📊 Google Scholar Profile</a>
+                <a href="https://orcid.org/0000-0003-4361-9746" target="_blank">🆔 ORCID Profile</a>
+            </div>
+            
+            <h3 style="color: #1e3c72; margin-top: 30px; margin-bottom: 15px; font-size: 1.2em;">Select Publications</h3>
             
             <div class="publication">
                 <div class="publication-title">Measurements of brown carbon and its optical properties from boreal forest fires in Alaska summer</div>
@@ -525,7 +530,6 @@
                     Kunal Bali, Sujai Banerji, James R Campbell, Aachal Vallabhbhai Bhakta, L-W Antony Chen, Christopher D Holmes, Jingqiu Mao
                 </div>
                 <div class="publication-meta"><strong>Atmospheric Environment</strong> (2024)</div>
-                <span class="impact-factor">IF: 5.0</span>
             </div>
             
             <div class="publication">
@@ -534,10 +538,7 @@
                     Jingqiu Mao, Kunal Bali et al.
                 </div>
                 <div class="publication-meta"><strong>Faraday Discussions</strong> (2024)</div>
-                <span class="impact-factor">IF: 3.3</span>
             </div>
-            
-            <h3 style="color: #1e3c72; margin-top: 30px; margin-bottom: 15px; font-size: 1.2em;">Before PhD (2013-2021)</h3>
             
             <div class="publication">
                 <div class="publication-title">Cleaner air would enhance India's annual solar energy production by 6-28 TWh</div>
@@ -545,8 +546,6 @@
                     Sushovan Ghosh, Sagnik Dey, Dilip Ganguly, Somnath Baidya Roy, Kunal Bali
                 </div>
                 <div class="publication-meta"><strong>Environmental Research Letters</strong> (2022)</div>
-                <span class="impact-factor">IF: 6.7</span>
-                <span class="citation-count">Citations: 7</span>
             </div>
             
             <div class="publication">
@@ -555,8 +554,6 @@
                     Kunal Bali, Sagnik Dey, Dilip Ganguli
                 </div>
                 <div class="publication-meta"><strong>Atmospheric Environment</strong> (2021)</div>
-                <span class="impact-factor">IF: 5.0</span>
-                <span class="citation-count">Citations: 24</span>
             </div>
             
             <div class="publication">
@@ -565,8 +562,6 @@
                     Kunal Bali, Amit Kumar, Sapna Chourasiya
                 </div>
                 <div class="publication-meta"><strong>Journal of Atmospheric Chemistry</strong> (2020)</div>
-                <span class="impact-factor">IF: 2.0</span>
-                <span class="citation-count">Citations: 8</span>
             </div>
             
             <div class="publication">
@@ -575,8 +570,6 @@
                     Sagnik Dey, Bhavesh Purohit, Palak Balyan, Kuldeep Dixit, Kunal Bali, et al.
                 </div>
                 <div class="publication-meta"><strong>Remote Sensing</strong> (2020)</div>
-                <span class="impact-factor">IF: 5.0</span>
-                <span class="citation-count">Citations: 60</span>
             </div>
             
             <div class="publication">
@@ -585,8 +578,6 @@
                     Nirav L. Lekinwala, Ankur Bhardwaj, Ramya Sunder Raman, Mani Bhushan, Kunal Bali, Sagnik Dey
                 </div>
                 <div class="publication-meta"><strong>Atmospheric Environment</strong> (2020)</div>
-                <span class="impact-factor">IF: 5.0</span>
-                <span class="citation-count">Citations: 23</span>
             </div>
             
             <div class="publication">
@@ -595,7 +586,6 @@
                     Prachi Singh, Sagnik Dey, Sourangsu Chowdhury, Kunal Bali
                 </div>
                 <div class="publication-meta"><strong>Brookings India</strong> (2019)</div>
-                <span class="citation-count">Citations: 41</span>
             </div>
             
             <div class="publication">
@@ -604,8 +594,6 @@
                     Amit Kumar, Kunal Bali, Sachchidanand Singh, Amit Kumar Mishra
                 </div>
                 <div class="publication-meta"><strong>Atmospheric Research</strong> (2019)</div>
-                <span class="impact-factor">IF: 5.5</span>
-                <span class="citation-count">Citations: 31</span>
             </div>
             
             <div class="publication">
@@ -614,8 +602,6 @@
                     Kunal Bali, Amit Kumar Mishra, Sachchidanand Singh, Subhash Chandra, Yoav Lehahn
                 </div>
                 <div class="publication-meta"><strong>Environmental Science and Pollution Research</strong> (2019)</div>
-                <span class="impact-factor">IF: 5.8</span>
-                <span class="citation-count">Citations: 24</span>
             </div>
             
             <div class="publication">
@@ -624,8 +610,6 @@
                     Kunal Bali, Amit Kumar Mishra, Sachchidanand Singh
                 </div>
                 <div class="publication-meta"><strong>Atmospheric Environment</strong> (2017)</div>
-                <span class="impact-factor">IF: 5.0</span>
-                <span class="citation-count">Citations: 49</span>
             </div>
         </section>
         
@@ -637,7 +621,7 @@
                 <div class="conference-title">Inter-comparison of brown carbon and black carbon measurements during winter in Fairbanks, Alaska</div>
                 <div class="conference-details">
                     <strong>Kunal Bali et al.</strong> | American Geophysical Union (AGU) 2024, Washington DC<br>
-                    <strong>Format:</strong> Poster Presentation 
+                    <strong>Format:</strong> Poster Presentation
                 </div>
             </div>
             
