@@ -14,16 +14,16 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
+            color: #1a1a1a;
+            background-color: #f5f5f5;
         }
         
         header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
             color: white;
             padding: 60px 20px;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
         }
         
         header h1 {
@@ -57,7 +57,7 @@
         nav {
             background-color: #fff;
             padding: 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -75,7 +75,7 @@
         nav a {
             display: block;
             padding: 15px 25px;
-            color: #1e3c72;
+            color: #1a1a1a;
             text-decoration: none;
             font-weight: 500;
             transition: all 0.3s;
@@ -83,8 +83,8 @@
         }
         
         nav a:hover {
-            border-bottom-color: #2a5298;
-            background-color: #f0f5ff;
+            border-bottom-color: #1a1a1a;
+            background-color: #f5f5f5;
         }
         
         .container {
@@ -98,21 +98,21 @@
             padding: 40px;
             margin-bottom: 30px;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
         }
         
         section h2 {
-            color: #1e3c72;
+            color: #1a1a1a;
             font-size: 1.8em;
             margin-bottom: 25px;
             padding-bottom: 10px;
-            border-bottom: 3px solid #2a5298;
+            border-bottom: 3px solid #1a1a1a;
         }
         
         .highlight-box {
-            background: #f0f5ff;
+            background: linear-gradient(135deg, #e8e8e8 0%, #f0f0f0 100%);
             padding: 20px;
-            border-left: 4px solid #2a5298;
+            border-left: 4px solid #1a1a1a;
             margin: 20px 0;
             border-radius: 4px;
         }
@@ -125,14 +125,20 @@
         }
         
         .research-item {
-            background: #f8f9fa;
+            background: linear-gradient(135deg, #e8e8e8 0%, #f0f0f0 100%);
             padding: 15px;
             border-radius: 6px;
-            border-left: 4px solid #2a5298;
+            border-left: 4px solid #4a4a4a;
+            transition: all 0.3s;
+        }
+        
+        .research-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
         }
         
         .research-item strong {
-            color: #1e3c72;
+            color: #1a1a1a;
         }
         
         .education-entry {
@@ -146,14 +152,14 @@
         }
         
         .education-entry h3 {
-            color: #2a5298;
+            color: #2d2d2d;
             font-size: 1.1em;
             margin-bottom: 5px;
         }
         
         .education-entry .institution {
             font-weight: 600;
-            color: #1e3c72;
+            color: #1a1a1a;
         }
         
         .education-entry .details {
@@ -173,14 +179,14 @@
         }
         
         .work-experience h3 {
-            color: #2a5298;
+            color: #2d2d2d;
             font-size: 1.05em;
             margin-bottom: 5px;
         }
         
         .work-experience .organization {
             font-weight: 600;
-            color: #1e3c72;
+            color: #1a1a1a;
         }
         
         .work-experience .duration {
@@ -191,14 +197,20 @@
         .publication {
             margin-bottom: 20px;
             padding: 15px;
-            background: #fafafa;
+            background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
             border-radius: 5px;
-            border-left: 3px solid #2a5298;
+            border-left: 3px solid #4a4a4a;
+            transition: all 0.3s;
+        }
+        
+        .publication:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         
         .publication-title {
             font-weight: 600;
-            color: #1e3c72;
+            color: #1a1a1a;
             margin-bottom: 5px;
         }
         
@@ -208,13 +220,14 @@
         }
         
         .publication a {
-            color: #2a5298;
+            color: #1a1a1a;
             text-decoration: none;
             font-weight: 500;
+            border-bottom: 1px solid #1a1a1a;
         }
         
         .publication a:hover {
-            text-decoration: underline;
+            color: #4a4a4a;
         }
         
         .conference {
@@ -226,7 +239,7 @@
         
         .conference-title {
             font-weight: 600;
-            color: #1e3c72;
+            color: #1a1a1a;
         }
         
         .conference-details {
@@ -243,14 +256,20 @@
         }
         
         .skill-category {
-            background: #f8f9fa;
+            background: linear-gradient(135deg, #e8e8e8 0%, #f0f0f0 100%);
             padding: 15px;
             border-radius: 6px;
-            border-top: 3px solid #2a5298;
+            border-top: 3px solid #1a1a1a;
+            transition: all 0.3s;
+        }
+        
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
         }
         
         .skill-category h4 {
-            color: #1e3c72;
+            color: #1a1a1a;
             margin-bottom: 10px;
         }
         
@@ -273,7 +292,7 @@
             align-items: center;
             gap: 8px;
             padding: 10px 15px;
-            background: #2a5298;
+            background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -282,9 +301,9 @@
         }
         
         .social-links a:hover {
-            background: #1e3c72;
+            background: linear-gradient(135deg, #4a4a4a 0%, #2d2d2d 100%);
             transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(42, 82, 152, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
         
         .publication-links {
@@ -300,7 +319,7 @@
             align-items: center;
             gap: 8px;
             padding: 12px 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4a4a4a 0%, #2d2d2d 100%);
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -310,11 +329,12 @@
         
         .publication-links a:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+            background: linear-gradient(135deg, #5a5a5a 0%, #3d3d3d 100%);
         }
         
         footer {
-            background-color: #1e3c72;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
             color: white;
             text-align: center;
             padding: 30px 20px;
@@ -329,12 +349,23 @@
         }
         
         .interest-item {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #6a6a6a 0%, #4a4a4a 100%);
             color: white;
             padding: 15px;
             border-radius: 6px;
             text-align: center;
             font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .interests a {
+            text-decoration: none;
+        }
+        
+        .interests a .interest-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            background: linear-gradient(135deg, #7a7a7a 0%, #5a5a5a 100%);
         }
         
         @media (max-width: 768px) {
@@ -402,7 +433,8 @@
         <section id="research">
             <h2>Research Focus</h2>
             <p style="margin-bottom: 20px;">
-                    My research investigates the composition and optical properties of atmospheric aerosols in extreme environments-spanning from the Arctic to India—to understand how wildfire emissions shape climate and air quality across contrasting high-latitude and tropical regions.            </p>
+                My research investigates the composition and optical properties of atmospheric aerosols in extreme environments—spanning from the Arctic to India—to understand how wildfire emissions shape climate and air quality across contrasting high-latitude and tropical regions.
+            </p>
             
             <div class="research-interest">
                 <div class="research-item">
@@ -415,19 +447,19 @@
                 </div>
                 <div class="research-item">
                     <strong>Ground Instrumentation</strong>
-                    <p>AE33, PAX, MAAP, PAAS-4&#955, TCA-08 inter-comparison</p>
+                    <p>AE33, PAX, MAAP, PAAS-4&#955;, TCA-08 inter-comparison</p>
                 </div>
                 <div class="research-item">
                     <strong>Arctic Aerosols</strong>
                     <p>High-latitude atmospheric processes and seasonal variability</p>
                 </div>
                 <div class="research-item">
-                    <strong>Aerosol-Radiation interaction</strong>
-                    <p>Direct and indirect radiative forcing using reanalysis (MERRA-2, ECMWF, etc.,)</p>
+                    <strong>Aerosol-Radiation Interaction</strong>
+                    <p>Direct and indirect radiative forcing using reanalysis (MERRA-2, ECMWF, etc.)</p>
                 </div>
                 <div class="research-item">
                     <strong>Chemical Modeling (Interested)</strong>
-                    <p>GEOS-Chem simulations for dark Brown Carbon </p>
+                    <p>GEOS-Chem simulations for dark Brown Carbon</p>
                 </div>
             </div>
         </section>
@@ -482,10 +514,10 @@
             <div class="publication-links">
                 <a href="https://scholar.google.co.in/citations?user=mHZ3W1oAAAAJ&hl=en&authuser=1" target="_blank">📊 Google Scholar Profile</a>
                 <a href="https://orcid.org/0000-0003-4361-9746" target="_blank">🆔 ORCID Profile</a>
-                <a href="https://www.researchgate.net/profile/Kunal-Bali?ev=hdr_xprf" target="_blank">🆔 ResearchGate Profile</a>
+                <a href="https://www.researchgate.net/profile/Kunal-Bali?ev=hdr_xprf" target="_blank">📚 ResearchGate Profile</a>
             </div>
             
-            <h3 style="color: #1e3c72; margin-top: 30px; margin-bottom: 15px; font-size: 1.2em;">Select Publications</h3>
+            <h3 style="color: #1a1a1a; margin-top: 30px; margin-bottom: 15px; font-size: 1.2em;">Select Publications</h3>
             
             <div class="publication">
                 <div class="publication-title">Measurements of brown carbon and its optical properties from boreal forest fires in Alaska summer</div>
@@ -615,8 +647,8 @@
                 </div>
             </div>
         </section>
-        
-       <!-- Education Section -->
+
+        <!-- Education Section -->
         <section id="education">
             <h2>Education</h2>
             
@@ -649,24 +681,25 @@
                 </div>
             </div>
         </section>
+
         <!-- Teaching & Training -->
         <section>
             <h2>Teaching & Professional Development</h2>
             
-            <h3 style="color: #2a5298; margin-bottom: 15px; margin-top: 0;">Teaching Assistant</h3>
+            <h3 style="color: #2d2d2d; margin-bottom: 15px; margin-top: 0;">Teaching Assistant</h3>
             <ul style="list-style-position: inside; color: #555; line-height: 1.8;">
                 <li><strong>CHEM 105</strong> (Fall 2021, F06, F09)</li>
                 <li><strong>CHEM 314</strong> (Spring 2022, Spring 2023)</li>
             </ul>
             
-            <h3 style="color: #2a5298; margin-bottom: 15px; margin-top: 25px;">NASA ARSET Certification</h3>
+            <h3 style="color: #2d2d2d; margin-bottom: 15px; margin-top: 25px;">NASA ARSET Certification</h3>
             <ul style="list-style-position: inside; color: #555; line-height: 1.8;">
                 <li>Applied Remote Sensing Training (ARSET) Air Quality – "Satellite Remote Sensing of Particulate Matter Air Quality: Data, Tools, Methods and Applications" (2015)</li>
                 <li>ARSET – "High Temporal Resolution Air Quality Observations from Space" (2018)</li>
                 <li>ARSET – "High Resolution NO₂ Monitoring from Space with TROPOMI" (2019)</li>
             </ul>
             
-            <h3 style="color: #2a5298; margin-bottom: 15px; margin-top: 25px;">Peer Review Service</h3>
+            <h3 style="color: #2d2d2d; margin-bottom: 15px; margin-top: 25px;">Peer Review Service</h3>
             <ul style="list-style-position: inside; color: #555; line-height: 1.8;">
                 <li>Journal of Environmental Management</li>
                 <li>Environmental Science and Pollution Research International</li>
@@ -681,7 +714,7 @@
             <div class="skills-grid">
                 <div class="skill-category">
                     <h4>Instrumentation</h4>
-                    <p> Filter-based (AE33 Aethalometer MAAP) & suspended in-situ (PAX, PAAS-4&#955), and TCA-08 aerosol instruments </p>
+                    <p>Filter-based (AE33 Aethalometer, MAAP) & suspended in-situ (PAX, PAAS-4&#955;), and TCA-08 aerosol instruments</p>
                 </div>
                 <div class="skill-category">
                     <h4>Programming & Software</h4>
@@ -706,10 +739,10 @@
             </p>
             <div class="interests">
                 <a href="https://www.instagram.com/kunalbali9/" target="_blank" style="text-decoration: none;">
-                   <div class="interest-item">🎨 Painting & Visual Arts</div>
+                    <div class="interest-item">🎨 Painting & Visual Arts</div>
                 </a>
                 <a href="https://x.com/KunalBali" target="_blank" style="text-decoration: none;">
-                   <div class="interest-item">📚 Reading & Literature</div>
+                    <div class="interest-item">📚 Reading & Literature</div>
                 </a>
             </div>
         </section>
@@ -719,7 +752,7 @@
             <h2>Connect</h2>
             <div class="social-links">
                 <a href="https://scholar.google.co.in/citations?user=mHZ3W1oAAAAJ&hl=en&authuser=1" target="_blank">📊 Google Scholar</a>
-                <a href="https://https://www.researchgate.net/profile/Kunal-Bali?ev=hdr_xprf" target="_blank">🆔 ResearchGate Profile</a>
+                <a href="https://www.researchgate.net/profile/Kunal-Bali?ev=hdr_xprf" target="_blank">📚 ResearchGate Profile</a>
                 <a href="https://x.com/KunalBali" target="_blank">𝕏 Twitter</a>
                 <a href="https://www.instagram.com/kunalbali9/" target="_blank">📸 Instagram</a>
                 <a href="mailto:kbali@alaska.edu">✉️ Email</a>
